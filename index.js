@@ -40,3 +40,18 @@ function createBoard(boardArray){
 }
 
 createBoard(boardArray);
+
+function askPrompts(){
+    prompt.start();
+    prompt.get(['question1', 'question2'], (err, result) => {
+        boardArray[result.question1][result.question2] = 'X';
+        createBoard(boardArray);
+        turn++
+        myEmitter.emit('prompt')
+    });
+
+};
+
+myEmitter.on('prompt', askPrompts);
+
+askPrompts();
