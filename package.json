@@ -1,0 +1,25 @@
+{
+  "name": "commandline_tic_tac_toe",
+  "version": "1.0.0",
+  "description": "Command line tic-tac-toe game using node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "play": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahimlaiwalla/CommandLine_Tic_Tac_Toe.git"
+  },
+  "author": "Rahim Laiwalla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahimlaiwalla/CommandLine_Tic_Tac_Toe/issues"
+  },
+  "homepage": "https://github.com/rahimlaiwalla/CommandLine_Tic_Tac_Toe#readme",
+  "dependencies": {
+    "events": "^3.0.0",
+    "nodemon": "^2.0.1",
+    "prompt": "^1.0.0"
+  }
+}
